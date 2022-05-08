@@ -8,9 +8,8 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8671/eureka/
-    register-with-eureka: false #????? ???? ????? ??
-    fetch-registry: false  #??? ?? ??? ?? ?? ??
+      defaultZone: http://localhost:8671/eureka/  # discovery 주소
+    register-with-eureka: false                   # eureka server 자기자신을 서비스로 등록시키지 않음
+    fetch-registry: false                         # eureka client가 eureka server의 서비스 목록을 로컬에 캐시 하지 않음
   server:
-    #Self-Preservation ??? ?? ? ? ?? ?? ????? ?? ????? ?? ?? ?? ??
-    enable-self-preservation: true
+    enable-self-preservation: true                # 자가 보호 모드(네트워크 장애가 발생하여도 서비스 해제를 방지하는 모드)
