@@ -1,4 +1,4 @@
-package com.project.banksystem.msaclientuser
+package com.project.BankSystem.MsaClientUser
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
